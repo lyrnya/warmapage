@@ -2,59 +2,70 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Warma的个人主页</title>
-    <title></title>
-    <style>
-        *{font-size: 0;}
-        @media screen  {
-        html {
-        transform: scale(0.8);
-        }
-  }
-    </style>
+  <title>Warma的个人主页</title>
+  <style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: black;
+    }
+
+    div#layer {
+      position: absolute;
+      left: 0px;
+      top: 30px;
+    }
+  </style>
 </head>
 
 <body style="background-color:black;">
-    <p style="text-align: center;">  
-         
-        <a style="text-align: center;" href="https://search.bilibili.com/all?keyword=Warma">
-            <img src="image/1.png" border="0" width="1177.4" height="95.9"><br>
-        </a>
-        <a href="https://dreamwarma.lofter.com">
-            <img src="image/2.png" border="0" width="1177.4" height="95.9"><br>
-        </a>
-        <a href="https://weibo.com/1782488734/NdvymFcnq">
-            <img src="image/3.png" border="0" width="1177.4" height="95.9"><br>
-        </a>
-        <a href="https://space.bilibili.com/53456">
-            <img src="image/4.png" border="0" width="1177.4" height="95.9"><br>
-        </a>
-        <a href="https://space.bilibili.com/53456">
-            <img src="image/5.png" border="0" width="1177.4" height="95.9"><br>
-        </a>
-        <a href="https://space.bilibili.com/53456/video">
-            <img src="image/6.png" border="0" width="1177.4" height="95.9"><br>
-        </a>
-        <a href="https://space.bilibili.com/53456/video?tid=1&special_type=&pn=1&keyword=&order=pubdate">
-            <img src="image/1donghua.png" border="0" width="198.8" height="95.9">
-        </a>
-        <a href="https://space.bilibili.com/53456/search/dynamic?keyword=%E9%85%8D%E9%9F%B3">
-            <img src="image/2peiyin.png" border="0" width="212.8" height="95.9">
-        </a>
-        <a href="https://space.bilibili.com/53456/video?tid=4&special_type=&pn=1&keyword=&order=pubdate">
-            <img src="image/3youxi.png" border="0" width="208.6" height="95.9">
-        </a>
-        <a href="https://space.bilibili.com/53456/search/dynamic?keyword=%E7%BF%BB%E5%94%B1">
-            <img src="image/4fangchang.png" border="0" width="197.4" height="95.9">
-        </a>
-        <a href="https://space.bilibili.com/53456/video?tid=160&special_type=&pn=1&keyword=&order=pubdate">
-            <img src="image/5shenghuo.png" border="0" width="196" height="95.9">
-        </a>
-        <a href="https://weibo.com/u/1782488734">
-            <img src="image/6richang.png" border="0" width="163.8" height="95.9">
-        </a>
-    </p>
+  <a><img src="image/page.png" alt="image with clickable areas" usemap="#link" class="center"></a>
+
+  <map name="link">
+    <area target="_blank" alt="area1" title="点这里搜索Warma" href="https://search.bilibili.com/all?keyword=Warma"
+      coords="0,0,1151,94" shape="rect">
+    <area target="_blank" alt="area2" title="忆雨：我恨人类" href="https://dreamwarma.lofter.com" coords="0,95,1151,187"
+      shape="rect">
+    <area target="_blank" alt="area3" title="你好！我是Warma,可以喊我沃玛" href="https://weibo.com/1782488734/NdvymFcnq"
+      coords="0,188,1151,281" shape="rect">
+    <area target="_blank" alt="area4" title="点这里看哔哩哔哩主页" href="https://space.bilibili.com/53456" coords="0,282,1151,468"
+      shape="rect">
+    <area target="_blank" alt="area6" title="免费视频在线看" href="https://space.bilibili.com/53456/video"
+      coords="0,469,1151,561" shape="rect">
+    <area target="_blank" alt="area7" title="动画"
+      href="https://space.bilibili.com/53456/video?tid=1&special_type=&pn=1&keyword=&order=pubdate"
+      coords="0,562,192,655" shape="rect">
+    <area target="_blank" alt="area8" title="配音"
+      href="https://space.bilibili.com/53456/search/dynamic?keyword=%E9%85%8D%E9%9F%B3" coords="193,562,396,655"
+      shape="rect">
+    <area target="_blank" alt="area9" title="游戏"
+      href="https://space.bilibili.com/53456/video?tid=4&special_type=&pn=1&keyword=&order=pubdate"
+      coords="397,562,608,655" shape="rect">
+    <area target="_blank" alt="area10" title="翻唱"
+      href="https://space.bilibili.com/53456/search/dynamic?keyword=%E7%BF%BB%E5%94%B1" coords="609,562,800,655"
+      shape="rect">
+    <area target="_blank" alt="area11" title="生活"
+      href="https://space.bilibili.com/53456/video?tid=160&special_type=&pn=1&keyword=&order=pubdate"
+      coords="801,562,990,655" shape="rect">
+    <area target="_blank" alt="area11" title="日常" href="https://weibo.com/u/1782488734" coords="801,562,1151,655"
+      shape="rect">
+
+
+  </map>
+
+  <div id="layer">
+    <img src="image/st.png" />
+  </div>
+
+  <script>
+    window.onload = move;
+    function move() {
+      document.getElementById("layer").style.left = 25 + "px";
+      document.getElementById("layer").style.top = 270 + "px";
+    }
+
+  </script>
 </body>
 
 </html>
